@@ -14,13 +14,27 @@ class BankManager {
     }
     
     func start() {
-
-    }
-
-    func select() {
         
     }
-
+    
+    func select() throws -> Bool {
+        print("1: 은행 개점 \n2: 종료 \n입력: ", terminator: "")
+        
+        guard let inputKey = readLine() else {
+            throw ErrorType.unknownError
+        }
+        
+        if inputKey == "1" {
+            return true
+        } else if inputKey == "2" {
+            return false
+        } else {
+            print("잘못된 입력입니다")
+            try select()
+            throw ErrorType.wrongInput
+        }
+    }
+    
     func enterCustomer() {
 
     }
