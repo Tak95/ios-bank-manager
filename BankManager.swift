@@ -7,7 +7,12 @@
 import Foundation
 
 class BankManager {
-
+    
+    enum ErrorType: Error {
+        case wrongInput
+        case unknownError
+    }
+    
     func start() {
 
     }
