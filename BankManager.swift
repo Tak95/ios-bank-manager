@@ -5,3 +5,30 @@
 //
 
 import Foundation
+
+class BankManager {
+
+    func start() {
+
+    }
+
+    func select() {
+        
+    }
+
+    func enterCustomer() {
+
+    }
+
+    func work() {
+
+    }
+
+    func checkCustomer() {
+
+    }
+
+    func endWork() {
+
+    }
+}
